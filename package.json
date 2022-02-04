@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Weather app",
+  "main": "index.js",
+  "scripts": {
+    "start": "/WeatherApp/public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/RDanielcode/WeatherApp.git"
+  },
+  "keywords": [
+    "api",
+    "javascript"
+  ],
+  "author": "Daniel Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RDanielcode/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/RDanielcode/WeatherApp#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
