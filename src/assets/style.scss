@@ -1,0 +1,98 @@
+$font1: sans-serif;
+$size1: 24px;
+$size2: 20px;
+$size3: 12px;
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    font-family: $font1;
+}
+
+
+@mixin position {
+    display: flex;
+    justify-content: center;
+}
+
+body{
+    background-image: url(./img/clouds.jpeg);
+    background-size: cover;
+}
+
+header{
+    height: 20vh;
+    @include position();
+    align-items: center;
+    font-size: $size1;
+    font-weight: bold;
+    color: rgb(233, 215, 215);
+    
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    @include position();
+    
+}
+
+#text{
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 5px;
+}
+
+.button{
+    border-radius: 5px;
+    border: none;
+    margin-right: 3px;
+}
+
+.button2{
+    border-radius: 5px;
+    border: none;
+    margin-right: 3px;
+}
+
+.section{
+    height: 40%;
+    width: auto;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    &__data{
+        @include position();
+        margin-bottom: 50px;
+    }
+    &__results{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.results--container{
+    background-color: rgb(40, 85, 231);
+    margin: 15px;
+    color: rgb(255, 251, 251);
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    @include position();
+    align-items: center;
+}
+
+.temp--number{
+    font-size: 36px;
+    .temp--unit{
+        font-size: $size3;
+        position: absolute;
+        bottom: 230px;
+    }
+}
+
+.data--info{
+    font-size: $size3;
+}
