@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/RDanielcode/WeatherApp/issues"
   },
-  "homepage": "https://github.com/RDanielcode/WeatherApp",
+  "homepage": "https://RDanielcode.github.io/WeatherApp",
   "devDependencies": {
     "live-server": "^1.2.1"
   }
