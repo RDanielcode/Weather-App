@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssPlugin = require('mini-css-extract-plugin');
-// const CssMinimizer = require('css-minimizer-webpack-plugin');
 const TerserPLugin = require('terser-webpack-plugin');
 
 module.exports = {

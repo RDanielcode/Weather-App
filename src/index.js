@@ -16,7 +16,17 @@ class GetInfo {
         const response = await fetch(`${API}q=${city.value}&appid=${API_key}`)
         const data = await response.json()
         console.log(data)
-        this.showData(data);
+
+        if(data.cod !== 200){
+            const container = document.createElement('div');
+        container.innerHTML = `
+        <div>
+            <h2> Please, enter a valid name </h2>
+        </div>`
+        results.appendChild(container);
+        } else {
+            this.showData(data);
+        }
     }
 
     showData(data){

@@ -6,8 +6,7 @@
 }
 
 body {
-  background-image: url("./img/clouds.jpg");
-  background-size: cover;
+  background-color: #9bb6df;
 }
 
 header {
@@ -23,7 +22,7 @@ header {
           align-items: center;
   font-size: 24px;
   font-weight: bold;
-  color: #e9d7d7;
+  color: #f7f0f0;
 }
 
 .container {
@@ -43,18 +42,22 @@ header {
   border-left: none;
   border-right: none;
   margin: 5px;
+  font-family: sans-serif;
+  color: #1f1d1d;
 }
 
 .button {
   border-radius: 5px;
   border: none;
   margin-right: 3px;
+  color: #1f1d1d;
 }
 
 .button2 {
   border-radius: 5px;
   border: none;
   margin-right: 3px;
+  color: #1f1d1d;
 }
 
 .section {
@@ -93,6 +96,8 @@ header {
 }
 
 .results--container {
+  -webkit-box-shadow: 7px 5px 12px -3px #000000;
+          box-shadow: 7px 5px 12px -3px #000000;
   background-color: #2855e7;
   margin: 15px;
   color: #fffbfb;
@@ -110,6 +115,10 @@ header {
           align-items: center;
 }
 
+.data--temp {
+  position: relative;
+}
+
 .temp--number {
   font-size: 36px;
 }
@@ -117,10 +126,31 @@ header {
 .temp--number .temp--unit {
   font-size: 12px;
   position: absolute;
-  bottom: 230px;
+  bottom: 60%;
 }
 
 .data--info {
   font-size: 12px;
+}
+
+@media (min-width: 600px) {
+  header {
+    font-size: 32px;
+  }
+  #text {
+    height: 30px;
+    width: 200px;
+  }
+  .results--container {
+    height: 300px;
+    width: 300px;
+  }
+  .temp--number {
+    font-size: 40px;
+  }
+  .temp--number .temp--unit {
+    font-size: 20px;
+    bottom: 285px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
