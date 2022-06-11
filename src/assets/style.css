@@ -150,7 +150,7 @@ header {
   }
   .temp--number .temp--unit {
     font-size: 20px;
-    bottom: 285px;
+    bottom: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */
